@@ -79,7 +79,7 @@ fn main() {
         }
         SubCommand::Init(config) => near_indexer::init_configs(
             &home_dir,
-            config.chain_id.as_ref().map(AsRef::as_ref),
+            config.chain_id,
             config.account_id.map(|account_id_string| {
                 near_indexer::near_primitives::types::AccountId::try_from(account_id_string)
                     .expect("Received accound_id is not valid")
@@ -197,6 +197,7 @@ async fn handle_message(
     bucket: String,
     stats: Arc<Mutex<Stats>>,
 ) -> anyhow::Result<()> {
+    println!("{:?}", streamer_message);
     let block_height = streamer_message.block.header.height;
     let mut stats_lock = stats.lock().await;
     stats_lock.block_heights_processing.insert(block_height);

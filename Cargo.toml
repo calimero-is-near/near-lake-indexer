@@ -25,7 +25,7 @@ tokio-stream = { version = "0.1" }
 tracing = "0.1.34"
 tracing-subscriber = "0.2.4"
 
-near-indexer = { git = "https://github.com/calimero-is-near/nearcore", rev = "fbbfee45a66227498df84b989d9af286fe68cb10", features = ["calimero_zero_storage"] }
-near-indexer-primitives = { git = "https://github.com/calimero-is-near/nearcore", rev = "fbbfee45a66227498df84b989d9af286fe68cb10" }
-near-client = { git = "https://github.com/calimero-is-near/nearcore", rev = "fbbfee45a66227498df84b989d9af286fe68cb10" }
-near-o11y = { git = "https://github.com/calimero-is-near/nearcore", rev = "fbbfee45a66227498df84b989d9af286fe68cb10" }
+near-indexer = { git = "https://github.com/calimero-is-near/nearcore", rev = "1e781bcccfaeb9a4bb9531155193a459257afd8d" }
+near-indexer-primitives = { git = "https://github.com/calimero-is-near/nearcore", rev = "1e781bcccfaeb9a4bb9531155193a459257afd8d" }
+near-client = { git = "https://github.com/calimero-is-near/nearcore", rev = "1e781bcccfaeb9a4bb9531155193a459257afd8d" }
+near-o11y = { git = "https://github.com/calimero-is-near/nearcore", rev = "1e781bcccfaeb9a4bb9531155193a459257afd8d" }
