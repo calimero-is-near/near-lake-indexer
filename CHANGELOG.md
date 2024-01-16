@@ -1,5 +1,44 @@
 # Changelog
 
+## 0.1.27
+
+* Upgrade Indexer Framework to be based on [nearcore 1.36.0-rc.1](https://github.com/near/nearcore/releases/tag/1.36.0-rc.1)
+
+## 0.1.26
+
+* Upgrade Indexer Framework to be based on [nearcore 1.35.0-rc.1](https://github.com/near/nearcore/releases/tag/1.35.0-rc.1)
+
+## 0.1.25
+
+* Fixed the dependency tree from `0.1.24` release that was broken due to the `nearcore` release.
+
+## 0.1.24 (broken build see #74)
+
+* Upgrade Indexer Framework to be based on [nearcore 1.34.0](https://github.com/near/nearcore/releases/tag/1.34.0)
+
+## 0.1.23
+
+* Upgrade Indexer Framework to be based on [nearcore 1.33.0-rc.1](https://github.com/near/nearcore/releases/tag/1.34.0-rc.1)
+* Updated the minimal Rust version to `1.68.2`
+
+## 0.1.22
+
+* Upgrade Indexer Framework to be based on [nearcore 1.33.0-rc.1](https://github.com/near/nearcore/releases/tag/1.33.0-rc.1)
+* Updated the minimal Rust version to `1.68.0`
+
+## 0.1.21
+
+* Upgrade Indexer Framework to be based on [nearcore 1.32.0-rc.1](https://github.com/near/nearcore/releases/tag/1.32.0-rc.1)
+* Updated the minimal Rust version to `1.67.1`
+
+## 0.1.21-rc.0
+
+* Add support for meta transactions by upgrading near crates to [0.16](https://github.com/near/nearcore/commit/1a18003fe2f0873caac670bc0b86f8d59842b20a)
+
+## 0.1.20
+
+* Upgrade Indexer Framework to be based on [nearcore 1.31.1](https://github.com/near/nearcore/commit/825bc1b44b6d5080cc610d542e2b57f329d7aed9)
+
 ## 0.1.19
 
 * Upgrade Indexer Framework to be based on [nearcore 1.31.0-rc.4](https://github.com/near/nearcore/commit/f709cdc89adfa0594df5ac20212e75402a1b862e)
