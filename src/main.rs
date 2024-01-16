@@ -31,6 +31,7 @@ impl Stats {
 }
 
 fn main() {
+    dotenv::dotenv().ok();
     // We use it to automatically search the for root certificates to perform HTTPS calls
     // (sending telemetry and downloading genesis)
     openssl_probe::init_ssl_cert_env_vars();
@@ -79,7 +80,7 @@ fn main() {
         }
         SubCommand::Init(config) => near_indexer::init_configs(
             &home_dir,
-            config.chain_id.as_ref().map(AsRef::as_ref),
+            config.chain_id,
             config.account_id.map(|account_id_string| {
                 near_indexer::near_primitives::types::AccountId::try_from(account_id_string)
                     .expect("Received accound_id is not valid")
